@@ -95,3 +95,19 @@
 .stonks-friend img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid var(--border)}
 @media(max-width:700px){.stonks-friend{width:140px;margin:0 0 16px}.chaos-heading:has(.stonks-friend) h1{flex-basis:calc(100% - 160px)}}
 @media(max-width:380px){.chaos-heading:has(.stonks-friend) h1{flex-basis:100%}}
+.confused-duo{display:flex;align-items:center;gap:14px;flex-shrink:0}
+.confused-duo .confused-friend{width:145px}
+.naruto-friend{width:120px;margin:0;flex-shrink:0}
+.naruto-friend img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid #c3b0f466}
+.study-friend-finish img{width:240px;height:auto;object-fit:contain}
+.answer-easter-egg:empty{display:none}
+.answer-easter-egg{margin-top:20px;animation:appear .3s both}
+.answer-easter-egg img{display:block;width:min(100%,340px);height:auto;border-radius:12px}
+@media(max-width:900px){.chaos-heading:has(.confused-duo){flex-wrap:wrap}.chaos-heading:has(.confused-duo) h1{flex-basis:100%}}
+@media(max-width:700px){
+ .confused-duo{gap:12px;margin-bottom:15px;max-width:100%}
+ .confused-duo .confused-friend{width:130px;margin:0}
+ .naruto-friend{width:100px}
+ .study-friend-finish{flex-direction:column;align-items:center;text-align:center}
+ .study-friend-finish img{width:min(240px,100%);height:auto}
+}
